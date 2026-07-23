@@ -452,7 +452,7 @@ footer .tag{color:rgba(247,246,242,.7)}
       lx.stroke();
     };
     var pct=load.querySelector('.lpct');
-    var FIELD=3600, GS=0.70;   /* the green joins at 70% — before the field feels finished */
+    var FIELD=2150, GS=0.62;   /* más fluido: campo más corto y el verde entra antes */
     var pStart=null, released=false;
     var easeIO=function(x){ return x<=0?0:x>=1?1:(x<0.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2); };
     /* deterministic per-line "random" — stable across frames */
