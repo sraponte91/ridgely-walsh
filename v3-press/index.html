@@ -43,17 +43,6 @@ body{
   -webkit-font-smoothing:antialiased;overflow-x:clip;
 }
 body.locked{overflow:hidden}
-/* Team / Press: overlays que se deslizan hacia arriba desde el menú */
-.ov{position:fixed;inset:0;z-index:120;overflow-y:auto;-webkit-overflow-scrolling:touch;
-  transform:translateY(100%);visibility:hidden;
-  transition:transform .6s cubic-bezier(.22,1,.36,1),visibility 0s .6s;}
-.ov.open{transform:translateY(0);visibility:visible;
-  transition:transform .6s cubic-bezier(.22,1,.36,1),visibility 0s 0s;}
-.ov__close{position:absolute;top:clamp(1.1rem,2vw,1.7rem);right:var(--pad);z-index:2;
-  display:inline-flex;align-items:center;gap:.45em;color:inherit;background:none;border:none;cursor:pointer;
-  font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:.3rem 0;}
-.ov__close span{font-size:1.15em;line-height:0}
-.ov__close:hover{color:var(--gold)}
 
 /* Instrument Sans titula y etiqueta; Manrope lleva el texto corrido */
 p{font-family:var(--text);font-weight:400;letter-spacing:0}
@@ -113,6 +102,18 @@ p{font-family:var(--text);font-weight:400;letter-spacing:0}
   --ink-20:rgba(244,241,232,.24);
   --ink-12:rgba(244,241,232,.16);
 }
+
+/* Team / Press: overlays que se deslizan hacia arriba desde el menú */
+.ov{position:fixed;inset:0;z-index:120;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  transform:translateY(100%);visibility:hidden;
+  transition:transform .6s cubic-bezier(.22,1,.36,1),visibility 0s .6s;}
+.ov.open{transform:translateY(0);visibility:visible;
+  transition:transform .6s cubic-bezier(.22,1,.36,1),visibility 0s 0s;}
+.ov__close{position:absolute;top:clamp(1.1rem,2vw,1.7rem);right:var(--pad);z-index:2;
+  display:inline-flex;align-items:center;gap:.45em;color:inherit;background:none;border:none;cursor:pointer;
+  font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:.3rem 0;}
+.ov__close span{font-size:1.15em;line-height:0}
+.ov__close:hover{color:var(--gold)}
 
 /* --------- 1 · Hero --------- */
 .hero{
