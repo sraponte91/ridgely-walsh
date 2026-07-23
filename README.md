@@ -1,15 +1,30 @@
-# Ridgely Walsh
+# Ridgely Walsh — Design Directions
 
-Rediseño del sitio de **Ridgely Walsh**, firma de public affairs
-("A public affairs advisory firm partnering with transformational companies and causes").
+Design explorations for the **Ridgely Walsh** website (a public affairs advisory
+firm partnering with transformational companies and causes).
 
-## Opción 1
+Published with **GitHub Pages** → https://sraponte91.github.io/ridgely-walsh/
 
-Versión editorial a página completa: hero tipográfico en Barlow Condensed con
-palabra rotativa (efecto typing/fill), acento dorado antiguo (#B8975A),
-pantalla de carga y estética limpia de alta gama.
+## Directions
 
-- [`ridgely-walsh-v1/index.html`](ridgely-walsh-v1/index.html) — archivo único autocontenido
-  (tipografías e imágenes embebidas, sin dependencias externas).
+| # | Name | Path | Status |
+|---|------|------|--------|
+| 01 | — | — | In preparation |
+| 02 | Modern | [`v2-modern/`](v2-modern/) | Live |
+| 03 | — | — | In preparation |
 
-Para verlo, abre el archivo en el navegador.
+Each direction is a single self-contained `index.html` — fonts and artwork are
+embedded, no build step and no external dependencies.
+
+### 02 · Modern
+Typographic hero in Manrope with a live, cursor-reactive contour field, and a
+hand-drawn intro that resolves into the hero image.
+
+## Local preview
+Open any direction's `index.html` in a browser, or serve the root:
+
+```bash
+python3 -m http.server
+```
+
+then visit http://localhost:8000/
