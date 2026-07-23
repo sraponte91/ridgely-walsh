@@ -42,7 +42,7 @@
   .lead p{color:var(--muted);margin-top:1rem;max-width:48ch}
 
   .grid{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2vw,1.75rem);
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,2vw,1.75rem);
     margin-top:clamp(2.5rem,6vh,4rem);
   }
   .opt{
@@ -82,16 +82,17 @@
   <main class="wrap">
     <div class="lead">
       <span class="tag">Website concepts</span>
-      <h1>Three directions for one firm.</h1>
+      <h1>Four directions for one firm.</h1>
       <p>A set of design explorations for the Ridgely Walsh site. Open a direction to view the full working prototype.</p>
     </div>
 
     <div class="grid">
-      <article class="opt soon">
+      <article class="opt live">
+        <a class="stretch" href="v1-editorial/" aria-label="Open Direction 01 — Editorial"></a>
         <span class="no">01</span>
-        <h2>Direction 01</h2>
-        <p>In preparation.</p>
-        <span class="go">Coming soon</span>
+        <h2>Editorial</h2>
+        <p>Full-bleed typographic hero in a bold condensed serif with a rotating sector word, an antique-gold accent and a curtain intro.</p>
+        <span class="go">View direction <span class="arw" aria-hidden="true">&rarr;</span></span>
       </article>
 
       <article class="opt live">
@@ -102,11 +103,20 @@
         <span class="go">View direction <span class="arw" aria-hidden="true">&rarr;</span></span>
       </article>
 
-      <article class="opt soon">
+      <article class="opt live">
+        <a class="stretch" href="v3-press/" aria-label="Open Direction 03 — Press"></a>
         <span class="no">03</span>
-        <h2>Direction 03</h2>
-        <p>In preparation.</p>
-        <span class="go">Coming soon</span>
+        <h2>Press</h2>
+        <p>Stacked colour panels on newsprint cream — Instrument Sans display over Manrope text, with a panel-peel loading sequence.</p>
+        <span class="go">View direction <span class="arw" aria-hidden="true">&rarr;</span></span>
+      </article>
+
+      <article class="opt live">
+        <a class="stretch" href="v4-petrol/" aria-label="Open Direction 04 — Petrol"></a>
+        <span class="no">04</span>
+        <h2>Petrol</h2>
+        <p>The same stacked layout carried into cool papers — petrol green and muted steel blue in place of the warm tones.</p>
+        <span class="go">View direction <span class="arw" aria-hidden="true">&rarr;</span></span>
       </article>
     </div>
   </main>
